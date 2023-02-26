@@ -204,6 +204,19 @@
         font-size: 2em;
     }
 
+    #botaoGame{
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        color: white;
+        background-color: green;
+        margin-top: 20px;
+    }
+
+    #botaoGame:hover{
+        color: #ccc;
+        background-color: rgb(4, 78, 4);
+    }
 </style>
 <body>
     <header>
@@ -312,6 +325,7 @@
                         </article>
                     </section>
                 </section>
+                <button id="botaoGame" onclick="window.location.href = 'index-game.html'">Ir para o jogo</button>
             </main>
             <script>
                 function aparecerArtigo(tipo){
