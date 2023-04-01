@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portal</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <h2 style="margin-bottom: 30px;" >Vulnerabilidade <span class="efect-green">zero</span> !</h2>
+            <p style="margin-bottom: 40px;">Nos ajude a criar qualidade de vida boa para todos ! Preencha os campos do formulario abaixo: </p>
+            <form action="">
+                <section class="grid">
+                    <div class="inputs-form">
+                        <input type="text" name="" id="nome" placeholder="Seu nome"  >
+                    </div>
+                    <div class="inputs-form">
+                        <input type="number" name="" id="idade" placeholder="Idade" min="15" max="80" required >
+                    </div>
+                </section>
+            
+                <div class="inputs-form">
+                    <input type="text" name="" id="local" placeholder="Local" required>
+                </div>
+                <section class="grid">
+                    <div class="inputs-form">
+                        <input style="cursor: pointer;" type="date" name="" id="data" placeholder="Data" min="0" max="30" required>
+                    </div>
+                    <div class="inputs-form">
+                        <input style="cursor: pointer;" type="time" name="" id="horario" placeholder="Horario" min="0" max="23" required>
+                    </div>
+                </section>
+                <div class="inputs-form">
+                    <textarea name="" id="descricao" cols="30" rows="10" placeholder="Descreva a situação" required></textarea>
+                </div>
+            </form>
+            <div class="inputs-form">
+                <button id="enviar" onclick="enviarDenuncia()">Enviar denuncia</button>
+            </div>
+            
+            
+            <iframe id="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14636.284623975216!2d-47.458847!3d-23.4939464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1680315823412!5m2!1spt-BR!2sbr" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+            
+        </section>
+        
+    </main>
+    <script src="ambiente.js"></script>
+</body>
+</html>
