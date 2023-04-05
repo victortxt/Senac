@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Redbutton</title>
+</head>
+<body>
+    <header>
+        <h1><span class="red-text">Red</span>Button</h1>
+    <span class="material-symbols-outlined">
+        menu
+        </span>
+    </header>
+    <main>
+        <h1 id="title">Selecione a Região</h1>
+        <section id="container">
+            <section onclick="resgatarValorMapa('o')" class="items-img">
+                <section>Oeste</section>
+                <img src="1.jpg" alt="">
+            </section>
+            <section onclick="resgatarValorMapa('no')" class="items-img">
+                <section>Noroeste</section>
+                <img src="2.jpg" alt="">
+            </section>
+            <section onclick="resgatarValorMapa('c')" class="items-img">
+                <section>Central</section>
+                <img src="3.jpg" alt="">
+            </section>
+            <section onclick="resgatarValorMapa('sd')" class="items-img">
+                <section>Sudeste</section>
+                <img src="4.jpg" alt="">
+            </section>
+            <section  onclick="resgatarValorMapa('s')" class="items-img">
+                <section>Sul</section>
+                <img src="5.jpg" alt="">
+            </section>
+            <section  onclick="resgatarValorMapa('l')" class="items-img">
+                <section>Leste</section>
+                <img src="6.jpg" alt="">
+            </section>
+        </section>
+        <section id="container-interation">
+            <div id="output">
+
+            </div>
+            <select onclick="resgatarValorSelect()" id = "select">
+                <option value="0">Insira a ocerrência</option>
+                <option value="assedio">Assédio</option>
+                <option value="assalto">Assalto</option>
+                <option value="acidente">Acidente</option>
+                <option value="poluição">Poluição</option>
+                <option value="preconceito">Preconceito</option>
+            </select>
+        </section>
+        <section id="btn">
+            <button onclick="enviar()">
+                ENVIAR
+            </button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
