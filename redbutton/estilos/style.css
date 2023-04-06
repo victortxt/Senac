@@ -139,6 +139,71 @@ body{
 
 }
 
+#menu{
+    color: white;
+    font-size: 3em;
+    background-color: rgba(255, 0, 0, 0.604);
+    cursor: pointer;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+#menu:hover{
+    color: rgba(255, 0, 0, 0.604);
+    font-size: 3em;
+    background-color:white ;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#menuNav{
+    background-color: rgb(37, 37, 37);
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    border-left: 4px solid rgba(255, 0, 0, 0.604);
+}
+
+#closeMenu{
+    cursor: pointer;
+    color: red;
+    font-size: 2em;
+}
+
+#closeMenu:hover{
+    color: white;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.menuItens{
+    box-sizing: border-box;
+    color: whitesmoke;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.menuItens > li> a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.menuItens > li{
+    padding: 10px 20px 0px 20px;
+    text-align: right;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.menuItens > li> a:hover{
+    color: rgba(255, 0, 0, 0.604);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
 @keyframes animationBtn {
     50%{
         width: 165px;

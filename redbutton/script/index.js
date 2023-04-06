@@ -41,8 +41,28 @@
             alert('ERRO')
         }else{
             alert(`O registro: ${r} / ocorrência: ${c}, foi cadastrada com sucesso !`)
+            window.location.href = `http://localhost/redbutton/resgatarDados.php?local=${r}&ocorrência=${c}`
+        }
+
+        //
+    }
+
+    function menu(){
+        //#menuNav
+        let navigation = document.querySelector('#menuNav') 
+        if(navigation.offsetWidth !== 200){
+            navigation.style.display = 'block'
         }
     }
+
+    function closeMenu(){
+        let navigation = document.querySelector('#menuNav') 
+        if(navigation.offsetWidth === 204){
+            navigation.style.display = 'none'
+        }
+    }
+
+    
 
 
 
