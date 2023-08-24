@@ -41,7 +41,7 @@
             alert('ERRO')
         }else{
             alert(`O registro: ${r} / ocorrência: ${c}, foi cadastrada com sucesso !`)
-            window.location.href = `http://localhost/redbutton/resgatarDados.php?local=${r}&ocorrência=${c}`
+            window.location.href = `http://localhost/redbutton/cadastro.php?local=${r}&ocorrência=${c}`
         }
 
         //
